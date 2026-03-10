@@ -1,0 +1,224 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+  body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    background-color: #f0f2f5; 
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+
+  header {
+    background-color: white;
+    padding: 25px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+  }
+
+  .logo-school {
+    max-height: 100px;
+    width: auto;
+  }
+
+  .header-text {
+    text-align: left;
+  }
+
+  h1 {
+    margin: 0;
+    color: #2c3e50;
+    font-size: 2.2rem;
+    line-height: 1.1;
+    letter-spacing: -1px;
+  }
+
+  h1 span {
+    display: block; 
+    color: #1b4d3e;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 4px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 50px 20px;
+  }
+
+  h2 { 
+    color: #4a5568; 
+    font-size: 1.1rem;
+    margin-top: 40px; 
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  h2::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #cbd5e0;
+    margin-left: 15px;
+  }
+  
+  h2 i { margin-right: 12px; color: #718096; }
+  .first-h2 { margin-top: 0; }
+
+  .button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 15px;
+  }
+
+  .btn-base {
+    display: flex;
+    align-items: center;
+    padding: 18px 22px;
+    color: white;
+    text-decoration: none;
+    border-radius: 14px;
+    font-weight: 600;
+    transition: all 0.25s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    min-height: 60px;
+  }
+
+  .btn-base i { 
+    margin-right: 15px; 
+    font-size: 1.4em; 
+    width: 30px; 
+    text-align: center; 
+  }
+
+  .btn-base:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    filter: brightness(1.1);
+  }
+
+  .bg-bingel      { background-color: #00a1e4; }
+  .bg-questi      { background-color: #f39c12; }
+  .bg-informat    { background-color: #34495e; }
+  .bg-gynzy       { background-color: #9b59b6; }
+  .bg-canva       { background-color: #00c4cc; }
+  .bg-vll         { background-color: #ff5e5e; } 
+  .bg-sprint      { background-color: #2980b9; } 
+  .bg-scoodle     { background-color: #2ecc71; }
+  .bg-digitaal    { background-color: #e74c3c; }
+  .bg-kraal       { background-color: #27ae60; }
+  .bg-fiets       { background-color: #1abc9c; }
+  .bg-print       { background-color: #636e72; }
+
+  /* MOBIEL OPTIMALISATIE */
+  @media (max-width: 600px) {
+    .container {
+      padding: 0 16px 40px 16px;
+    }
+    .button-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+    .btn-base {
+      padding: 22px 24px;
+      font-size: 1.1rem;
+      min-height: 75px;
+      border-radius: 16px;
+    }
+    .btn-base i {
+      font-size: 1.6em;
+    }
+    h2 {
+      font-size: 1rem;
+      margin-top: 35px;
+    }
+    header {
+      padding: 18px;
+      gap: 15px;
+    }
+    .logo-school {
+      max-height: 70px;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+  }
+</style>
+
+<header>
+  <img src="https://lh3.googleusercontent.com/u/0/d/1ptlBF_3rzwShn5IHTQG-QEatDSOOs80E" alt="Logo De Kraal" class="logo-school">
+  <div class="header-text">
+    <h1>De Kraal <span>Portaalsite</span></h1>
+  </div>
+</header>
+
+<div class="container">
+  
+  <h2 class="first-h2"><i class="fas fa-book-reader"></i> Digitale Leermiddelen</h2>
+  <div class="button-grid">
+    <a href="https://www.bingel.be/login/" class="btn-base bg-bingel"> 
+      <i class="fas fa-rocket"></i> Bingel 
+    </a>
+    <a href="https://teacher.gynzy.com/" class="btn-base bg-gynzy"> 
+      <i class="fas fa-chalkboard-teacher"></i> Gynzy 
+    </a>
+    <a href="https://leerkrachtmodule.uitgeverijzwijsen.be/GenerateShortcut.ashx?path=ip4/lk/login&mode=Teacher" class="btn-base bg-vll"> 
+      <i class="fas fa-font"></i> Veilig Leren Lezen - Ik Pen 
+    </a>
+    <a href="https://www.scoodle.be/login" class="btn-base bg-scoodle"> 
+      <i class="fas fa-graduation-cap"></i> Scoodle 
+    </a>
+  </div>
+
+  <h2><i class="fas fa-heart"></i> Zorg & Leerlingopvolging</h2>
+  <div class="button-grid">
+    <a href="https://iam.questi.com/1/login/add-account?continue=https:%2F%2Fwww.questi.com%2Fauth%2Flogin%2Fredirect" class="btn-base bg-questi"> 
+      <i class="fas fa-chart-line"></i> Questi (LVS) 
+    </a>
+    <a href="https://sprintplus.online/" class="btn-base bg-sprint"> 
+      <i class="fas fa-headphones"></i> SprintPlus online 
+    </a>
+  </div>
+
+  <h2><i class="fas fa-briefcase"></i> Schoolorganisatie</h2>
+  <div class="button-grid">
+    <a href="https://start.informatsoftware.be/informat/UIAfwezigheden/index.html#/login" class="btn-base bg-informat"> 
+      <i class="fas fa-user-check"></i> Afwezigheden Informat 
+    </a>
+    <a href="https://sites.google.com/kraal.be/winksele" class="btn-base bg-kraal"> 
+      <i class="fab fa-google-drive"></i> Drive Winksele 
+    </a>
+    <a href="#" class="btn-base bg-kraal"> 
+      <i class="fab fa-google-drive"></i> Drive Leerkrachten 
+    </a>
+  </div>
+
+  <h2><i class="fas fa-cog"></i> Administratie & ICT</h2>
+  <div class="button-grid">
+    <a href="https://kraalherent.count-e.net/webwisacc/start.html" class="btn-base bg-fiets"> 
+      <i class="fas fa-bicycle"></i> Kilometervergoeding 
+    </a>
+    <a href="https://www.canva.com/" class="btn-base bg-canva"> 
+      <i class="fas fa-palette"></i> Canva 
+    </a>
+    <a href="https://sites.google.com/kraal.be/ict" class="btn-base bg-digitaal"> 
+      <i class="fas fa-laptop-code"></i> De Kraal Digitaal (ICTHelp) 
+    </a>
+    <a href="https://sites.google.com/kraal.be/ict/ict-tools/kopieerapparaat" class="btn-base bg-print"> 
+      <i class="fas fa-print"></i> Printen en kopiëren 
+    </a>
+    <a href="#" class="btn-base bg-informat"> 
+      <i class="fas fa-file-invoice"></i> Zelfaankoopformulier 
+    </a>
+  </div>
+
+</div>
